@@ -63,6 +63,53 @@
     "role": "UI/UX Designer",
     "period": "Jun 2024 – Present"
   },
+  "sections": {
+    "hero": {
+      "primaryCta": "Explore my work",
+      "secondaryCta": "Let's talk",
+      "featuredLabel": "Latest work",
+      "currentRoleLabel": "Currently at"
+    },
+    "projects": {
+      "eyebrow": "Selected work",
+      "title": "Projects",
+      "accent": "that matter",
+      "description": "Design work grounded in real users, operational context, and measurable outcomes.",
+      "upcomingEyebrow": "On the desk",
+      "upcomingTitle": "Case studies in progress",
+      "externalCta": "See more on Dribbble"
+    },
+    "about": {
+      "eyebrow": "About me",
+      "title": "Designer who thinks",
+      "accent": "in data & design."
+    },
+    "process": {
+      "eyebrow": "How I work",
+      "title": "My",
+      "accent": "process"
+    },
+    "impact": {
+      "eyebrow": "By the numbers",
+      "title": "Key",
+      "accent": "impact"
+    },
+    "faq": {
+      "eyebrow": "Common questions",
+      "title": "Frequently asked",
+      "accent": "questions"
+    },
+    "contact": {
+      "eyebrow": "Get in touch",
+      "title": "Let’s work",
+      "accent": "together",
+      "submitLabel": "Send message",
+      "submittingLabel": "Opening your email app…"
+    },
+    "footer": {
+      "backToTop": "Back to top ↑"
+    }
+  },
   "skills": [
     "Figma",
     "Prototyping",
