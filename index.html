@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ankita Tadse — UI/UX Designer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Syne:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel='stylesheet' href='./styles.css'>
+</head>
+
+<body>
+
+  <!-- ============================================================
+     NAV
+     ============================================================ -->
+  <nav>
+    <div class="nav-logo">Ankita Tadse</div>
+    <ul class="nav-links">
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Desktop: badge + toggle -->
+    <div class="nav-desktop-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light/dark">
+        <span class="toggle-track">
+          <span class="toggle-icon toggle-sun">☀️</span>
+          <span class="toggle-icon toggle-moon">🌙</span>
+          <span class="toggle-thumb"></span>
+        </span>
+      </button>
+      <div class="nav-badge">Available for work</div>
+    </div>
+
+    <!-- Mobile: toggle + hamburger grouped on the right -->
+    <div class="nav-mobile-right">
+      <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme" title="Toggle light/dark">
+        <span class="toggle-track">
+          <span class="toggle-icon toggle-sun">☀️</span>
+          <span class="toggle-icon toggle-moon">🌙</span>
+          <span class="toggle-thumb"></span>
+        </span>
+      </button>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#projects" onclick="closeMobileMenu()">Work</a>
+    <a href="#about" onclick="closeMobileMenu()">About</a>
+    <a href="#process" onclick="closeMobileMenu()">Process</a>
+    <a href="#impact" onclick="closeMobileMenu()">Impact</a>
+    <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
+    <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+  </div>
+
+  <!-- ============================================================
+     HERO
+     ============================================================ -->
+  <section style="border-bottom: 1px solid var(--border); max-width: 1280px; margin: 0 auto;">
+    <div class="hero">
+      <div class="hero-left">
+        <div
+          style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:1.5rem; opacity:0; animation: up 0.7s 0.1s ease forwards;">
+          <div class="hero-greeting" style="margin-bottom:0;">
+            <span class="wave">👋</span> Hello, I'm
+          </div>
+
+        </div>
+        <h1 class="hero-name">Ankita</h1>
+        <h1 class="hero-name-2">Tadse</h1>
+        <p class="hero-role">
+          UI/UX &amp; Data Visualization Designer with <strong>2+ years</strong> of experience — currently at
+          <strong>Excellon Software</strong>, building enterprise SaaS products. I design with real-world operations and
+          data knowledge, not just theory.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-accent">Explore my work ↓</a>
+          <a href="#contact" class="btn-ghost">Let's talk →</a>
+        </div>
+        <div class="hero-meta">
+          <div>
+            <div class="hero-stat-n">20<span>+</span></div>
+            <div class="hero-stat-l">Projects</div>
+          </div>
+          <div>
+            <div class="hero-stat-n">8<span>+</span></div>
+            <div class="hero-stat-l">Domains</div>
+          </div>
+          <div>
+            <div class="hero-stat-n">2<span>+yr</span></div>
+            <div class="hero-stat-l">Industry exp.</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <!-- ── Featured hero card — edit src, tag, title, desc ── -->
+        <div class="hero-card-featured proj-card" data-id="automotive">
+          <img src="https://cdn.dribbble.com/userupload/47955111/file/c7bf1de20d115bdfdb0b68e42fb51a01.png"
+            alt="Automotive Service App">
+          <div class="hcf-body">
+            <div class="hcf-tag">Latest Work · Mobile UI</div>
+            <div class="hcf-title">Automotive Service Management App</div>
+            <div class="hcf-desc">End-to-end service tracking for mechanics and managers.</div>
+          </div>
+        </div>
+        <div
+          style="display:flex; align-items:center; justify-content:space-between; padding: 0.75rem 1rem; background:var(--bg3); border:1px solid var(--border); border-radius:var(--radius-sm);">
+          <div>
+            <div
+              style="font-size:0.625rem; font-weight:700; color:var(--accent); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:3px;">
+              Currently at</div>
+            <div style="font-size:0.875rem; font-weight:600; color:var(--white);">Excellon Software</div>
+            <div style="font-size:0.75rem; color:var(--off);">UI/UX Designer · Jun 2024–Present</div>
+          </div>
+          <div
+            style="width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2s infinite;flex-shrink:0;">
+          </div>
+        </div>
+        <div class="hero-mini-cards">
+          <div class="mini-card proj-card" data-id="bus">
+            <div class="mini-card-tag">Redesign</div>
+            <div class="mini-card-title">Bus Booking App</div>
+          </div>
+          <div class="mini-card proj-card" data-id="upload">
+            <div class="mini-card-tag">Before/After</div>
+            <div class="mini-card-title">Upload Experience</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     TOOLS TICKER
+     ============================================================ -->
+  <div class="ticker-wrap">
+    <div class="ticker-inner">
+      <!-- ── ADD / REMOVE tools here ── -->
+      <span class="ticker-item"><span class="ticker-dot"></span>Figma</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Prototyping</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>User Research</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Adobe XD</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Power BI</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Tableau</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Data Visualization</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Wireframing</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Design Systems</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>SaaS Product Design</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>AI-Assisted Design</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Dashboard Design</span>
+      <!-- duplicate for seamless loop -->
+      <span class="ticker-item"><span class="ticker-dot"></span>Figma</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Prototyping</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>User Research</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Adobe XD</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Power BI</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Tableau</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Data Visualization</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Wireframing</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Design Systems</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>SaaS Product Design</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>AI-Assisted Design</span>
+      <span class="ticker-item"><span class="ticker-dot"></span>Dashboard Design</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+     PROJECTS
+     To ADD a project: copy a .proj-card block, change data-id, fill in content
+     To REMOVE: delete the .proj-card block
+     To add the modal content: add a matching entry in the PROJECTS_DATA object below
+     ============================================================ -->
+  <section id="projects">
+    <div class="section">
+      <div class="section-head-row">
+        <div>
+          <div class="section-eyebrow">Selected work</div>
+          <div class="section-h">Projects</div>
+          <div class="section-h2">that matter</div>
+        </div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- ── PROJECT 1 ── -->
+        <div class="proj-card" data-id="automotive">
+          <img class="proj-img" src="images/Dribbble Shot Mobile - 16.png" alt="Automotive Service App" />
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag t-mobile">Mobile</span>
+              <span class="ptag t-ux">UX Case Study</span>
+            </div>
+            <div class="proj-title">Automotive Service Management App</div>
+            <div class="proj-desc">End-to-end service tracking for mechanics and service managers — scheduling, job
+              cards, real-time status.</div>
+            <div class="proj-arrow">View project →</div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 2 ── -->
+        <div class="proj-card" data-id="bus">
+          <img class="proj-img"
+            src="https://cdn.dribbble.com/userupload/47571016/file/eb5932117fc2d6ce88151a72a3c26b3e.png"
+            alt="Bus Booking Redesign">
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag t-mobile">Mobile</span>
+              <span class="ptag t-ux">Redesign</span>
+            </div>
+            <div class="proj-title">Bus Booking App Redesign</div>
+            <div class="proj-desc">Full UX case study — improved information hierarchy and booking flow.</div>
+            <div class="proj-arrow">View project →</div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 3 ── -->
+        <div class="proj-card" data-id="upload">
+          <img class="proj-img"
+            src="https://cdn.dribbble.com/userupload/47607156/file/1c38e9845bb4f2e8644f3b703f520ea1.png"
+            alt="Upload Experience Redesign">
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag t-web">Web</span>
+              <span class="ptag t-ux">Before / After</span>
+            </div>
+            <div class="proj-title">Upload Experience Redesign</div>
+            <div class="proj-desc">SaaS product redesign — streamlined states, clearer feedback, less drop-off.</div>
+            <div class="proj-arrow">View project →</div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 4 ── -->
+        <div class="proj-card" data-id="english">
+          <img class="proj-img"
+            src="https://cdn.dribbble.com/userupload/47868210/file/aec1fe9edf21990fc5943e5224626ae5.png"
+            alt="English Learning App">
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag t-mobile">Mobile</span>
+              <span class="ptag t-ux">UX Case Study</span>
+            </div>
+            <div class="proj-title">English Learning App</div>
+            <div class="proj-desc">Gamified language learning — onboarding, lesson structure, and progress tracking.
+            </div>
+            <div class="proj-arrow">View project →</div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 5 (span 2 = wide card) ── -->
+        <div class="proj-card span2" data-id="healthcare">
+          <img class="proj-img"
+            src="https://cdn.dribbble.com/userupload/12333697/file/original-f8f0ea5bb88e7784e2a2ced83cec1279.jpg"
+            alt="Healthcare Dashboard">
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag t-web">Web</span>
+              <span class="ptag t-dashboard">Dashboard</span>
+            </div>
+            <div class="proj-title">Healthcare Dashboard</div>
+            <div class="proj-desc">Patient analytics and appointment management — designed for speed and clarity in
+              clinical environments.</div>
+            <div class="proj-arrow">View project →</div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 6 ── -->
+        <div class="proj-card" data-id="finance">
+          <img class="proj-img"
+            src="https://cdn.dribbble.com/userupload/9096970/file/original-e286463615f9a1eef818818e73e8c7bf.png"
+            alt="Finance App">
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag t-mobile">Mobile</span>
+              <span class="ptag t-ux">Fintech</span>
+            </div>
+            <div class="proj-title">Finance Bank App</div>
+            <div class="proj-desc">Personal finance management — accounts, transfers, and transaction history.</div>
+            <div class="proj-arrow">View project →</div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 7 ── -->
+        <div class="proj-card" data-id="smartwatch">
+          <img class="proj-img"
+            src="https://cdn.dribbble.com/userupload/8993623/file/original-304d573b75bcdc86ea548e7aba79900d.png"
+            alt="Smartwatch UX">
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag t-ux">Wearable</span>
+              <span class="ptag t-ux">UX Case Study</span>
+            </div>
+            <div class="proj-title">Smartwatch — UX Case Study</div>
+            <div class="proj-desc">Compact wearable OS interface — navigating severe 40mm screen constraints.</div>
+            <div class="proj-arrow">View project →</div>
+          </div>
+        </div>
+
+        <!-- ── PROJECT 8 ── -->
+        <div class="proj-card" data-id="abtest">
+          <img class="proj-img"
+            src="https://cdn.dribbble.com/userupload/47932599/file/c2c551c02c2b273ddedf1046fdb71438.png"
+            alt="AB Test">
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="ptag t-web">Web</span>
+              <span class="ptag t-ux">A/B Testing</span>
+            </div>
+            <div class="proj-title">Profile Card A/B Test</div>
+            <div class="proj-desc">Two layout strategies tested for conversion, readability, and visual hierarchy.</div>
+            <div class="proj-arrow">View project →</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Dribbble CTA -->
+      <div style="display:flex; justify-content:center; margin-top:2.5rem;">
+        <a href="https://dribbble.com/ankitatadse" target="_blank" class="btn-ghost"
+          style="display:inline-flex; align-items:center; gap:8px; font-size:0.875rem;">
+          See more on Dribbble →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     ABOUT
+     ============================================================ -->
+  <section id="about" style="background:var(--bg2);">
+    <div class="section">
+      <div class="about-grid">
+        <div>
+          <div class="section-eyebrow">About me</div>
+          <h2 class="section-h">Designer <em>who thinks</em></h2>
+          <div class="section-h2" style="margin-bottom:2rem;">in data & design.</div>
+          <div class="about-text-block">
+            <p>I'm a <strong>UI/UX & Data Visualization Designer</strong> with <strong>2+ years</strong> of experience
+              transforming complex enterprise data into intuitive, user-friendly dashboards and digital products.
+              Currently at <strong>Excellon Software</strong>, designing a full enterprise SaaS Dealer Management System
+              across 10+ modules.</p>
+            <p>My background spans <strong>UI/UX design, dashboard design (Power BI, Tableau), and data
+                storytelling</strong>. I've worked across healthcare, finance, insurance, and automotive domains — which
+              means I design with domain context, not just visual taste.</p>
+            <p>Currently open to full-time UI/UX or Data Visualization design roles where I can keep building impactful,
+              data-driven products at scale.</p>
+          </div>
+          <div class="skills-grid">
+            <!-- ── ADD / REMOVE skills ── -->
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">Power BI</span>
+            <span class="skill-pill">Tableau</span>
+            <span class="skill-pill">Data Visualization</span>
+            <span class="skill-pill">Dashboard Design</span>
+            <span class="skill-pill">SaaS Product Design</span>
+            <span class="skill-pill">User Research</span>
+            <span class="skill-pill">Wireframing</span>
+            <span class="skill-pill">Prototyping</span>
+            <span class="skill-pill">Design Systems</span>
+            <span class="skill-pill">AI-Assisted Design</span>
+            <span class="skill-pill">Adobe XD</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="about-card-row">
+            <div class="a-card">
+              <div class="a-card-n">20+</div>
+              <div class="a-card-l">Projects done</div>
+            </div>
+            <div class="a-card">
+              <div class="a-card-n">8+</div>
+              <div class="a-card-l">Domains covered</div>
+            </div>
+          </div>
+          <div class="a-card" style="margin-bottom: 1rem;">
+            <div class="a-card-n">2+ yr</div>
+            <div class="a-card-l">Industry experience</div>
+          </div>
+          <!-- ── ADD / REMOVE experience entries ── -->
+          <div class="exp-item">
+            <div class="exp-left">
+              <div class="exp-co">Excellon Software</div>
+              <div class="exp-role">UI/UX Designer</div>
+            </div>
+            <div class="exp-date">Jun 2024 – Present</div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-left">
+              <div class="exp-co">NICE Software Solutions</div>
+              <div class="exp-role">Associate Data Visualization Designer</div>
+            </div>
+            <div class="exp-date">Sep 2023 – Mar 2024</div>
+          </div>
+          <div class="exp-item">
+            <div class="exp-left">
+              <div class="exp-co">Kohler Power India</div>
+              <div class="exp-role">Executive – Data Management</div>
+            </div>
+            <div class="exp-date">Sep 2021 – Sep 2022</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     WORK PROCESS
+     ============================================================ -->
+  <section id="process">
+    <div class="section">
+      <div class="section-eyebrow">How I work</div>
+      <h2 class="section-h">My <em>Process</em></h2>
+      <div class="process-grid">
+        <!-- ── ADD / REMOVE process steps ── -->
+        <div class="proc-card">
+          <div class="proc-num">01</div>
+          <div class="proc-title">Discovery</div>
+          <div class="proc-desc">User interviews, competitive research, pain-point mapping. I don't design before I
+            understand the problem.</div>
+        </div>
+        <div class="proc-card">
+          <div class="proc-num">02</div>
+          <div class="proc-title">Define</div>
+          <div class="proc-desc">Problem framing, user flows, and information architecture. Clarity before creativity.
+          </div>
+        </div>
+        <div class="proc-card">
+          <div class="proc-num">03</div>
+          <div class="proc-title">Design</div>
+          <div class="proc-desc">Wireframes → hi-fi → interactive prototypes. Iteration-first, pixel-perfect delivery.
+          </div>
+        </div>
+        <div class="proc-card">
+          <div class="proc-num">04</div>
+          <div class="proc-title">Deliver</div>
+          <div class="proc-desc">Dev handoff, design systems, usability testing. Design that ships and actually works.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     KEY IMPACT
+     ============================================================ -->
+  <section id="impact"
+    style="background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="section" style="padding-top: 4rem; padding-bottom: 4rem;">
+      <div class="section-eyebrow">By the numbers</div>
+      <h2 class="section-h" style="margin-bottom: 2.5rem;">Key <em>Impact</em></h2>
+      <div class="impact-stats" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem;">
+        <div
+          style="background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem;">
+          <div
+            style="font-family: var(--serif); font-size: 2.75rem; color: var(--accent); line-height: 1; margin-bottom: 8px;">
+            10+</div>
+          <div style="font-size: 0.8125rem; color: var(--off); line-height: 1.6;">Enterprise modules designed for SaaS
+            Dealer Management System</div>
+        </div>
+        <div
+          style="background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem;">
+          <div
+            style="font-family: var(--serif); font-size: 2.75rem; color: var(--accent); line-height: 1; margin-bottom: 8px;">
+            500+</div>
+          <div style="font-size: 0.8125rem; color: var(--off); line-height: 1.6;">Reusable UI assets created, improving
+            design consistency and scalability</div>
+        </div>
+        <div
+          style="background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem;">
+          <div
+            style="font-family: var(--serif); font-size: 2.75rem; color: var(--accent); line-height: 1; margin-bottom: 8px;">
+            40%</div>
+          <div style="font-size: 0.8125rem; color: var(--off); line-height: 1.6;">Business growth contribution through
+            enhanced product usability</div>
+        </div>
+        <div
+          style="background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem 1.75rem;">
+          <div
+            style="font-family: var(--serif); font-size: 2.75rem; color: var(--accent); line-height: 1; margin-bottom: 8px;">
+            20%</div>
+          <div style="font-size: 0.8125rem; color: var(--off); line-height: 1.6;">Data accuracy improvement through
+            structured data processes at Kohler</div>
+        </div>
+      </div>
+      <div class="impact-awards"
+        style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-top: 1.25rem;">
+        <div
+          style="background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem 1.75rem; display: flex; align-items: center; gap: 1rem;">
+          <div
+            style="width: 36px; height: 36px; border-radius: 50%; background: rgba(200,240,96,0.12); border: 1px solid rgba(200,240,96,0.25); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">
+            🏆</div>
+          <div>
+            <div style="font-size: 0.875rem; font-weight: 600; color: var(--white); margin-bottom: 2px;">Spot Award —
+              July 2024</div>
+            <div style="font-size: 0.8rem; color: var(--off);">Outstanding Performance · Excellon Software</div>
+          </div>
+        </div>
+        <div
+          style="background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem 1.75rem; display: flex; align-items: center; gap: 1rem;">
+          <div
+            style="width: 36px; height: 36px; border-radius: 50%; background: rgba(200,240,96,0.12); border: 1px solid rgba(200,240,96,0.25); display: flex; align-items: center; justify-content: center; font-size: 1rem; flex-shrink: 0;">
+            🥇</div>
+          <div>
+            <div style="font-size: 0.875rem; font-weight: 600; color: var(--white); margin-bottom: 2px;">Champion of the
+              Month — Nov 2022</div>
+            <div style="font-size: 0.8rem; color: var(--off);">Excellence Recognition · Kohler Power India</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     FAQ
+     ── ADD / REMOVE: duplicate or delete an .faq-item ──
+     ============================================================ -->
+  <section id="faq" style="background:var(--bg);">
+    <div class="section">
+      <div class="section-eyebrow">Common questions</div>
+      <h2 class="section-h"><em>FAQ</em></h2>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <div class="faq-q">What type of roles are you looking for?<span class="faq-icon">+</span></div>
+          <div class="faq-a">I'm looking for full-time UI/UX Designer or Data Visualization Designer roles — ideally at
+            product companies or agencies building enterprise tools, SaaS products, or data-driven applications. I'm
+            especially interested in roles at the intersection of UI design and dashboard/data storytelling, having
+            worked across healthcare, finance, insurance, and automotive domains.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">What's your design process like?<span class="faq-icon">+</span></div>
+          <div class="faq-a">I start with research — user interviews, competitive analysis, and workflow mapping. Then I
+            move to IA and wireframes before any hi-fi work. I believe clarity before creativity leads to better
+            outcomes and fewer redesigns.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">What tools do you use?<span class="faq-icon">+</span></div>
+          <div class="faq-a">My primary design tool is Figma — from wireframes to high-fidelity prototypes and design
+            systems. For data visualization and dashboard design, I work with Power BI and Tableau. I also use Adobe XD,
+            Photoshop, Illustrator, and AI tools like Figma AI, Claude, and ChatGPT to accelerate ideation and
+            iteration.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">Are you available for freelance projects?<span class="faq-icon">+</span></div>
+          <div class="faq-a">Yes — I take on select freelance projects alongside my job search. I prefer focused
+            engagements: mobile apps, web products, or redesigns with a clear scope and a real user problem at the
+            center.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-q">How can I see more of your work?<span class="faq-icon">+</span></div>
+          <div class="faq-a">All my public work is on this portfolio. I also have several case studies in progress (DMS,
+            Retailer's App, Clock-In) which will be posted here shortly. Feel free to reach out directly and I can share
+            work-in-progress files.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     CONTACT
+     ============================================================ -->
+  <section id="contact">
+    <div class="section">
+      <div class="section-eyebrow">Get in touch</div>
+      <h2 class="section-h">Let's <em>work</em> together</h2>
+      <p style="font-size:1rem; color:var(--off); max-width:500px; margin:0.75rem 0 3rem; line-height:1.7;">Open to
+        full-time UI/UX &amp; Data Visualization roles. Based in Nagpur, open to work across India.</p>
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="contact-info">
+            <!-- ── EDIT your contact details ── -->
+            <div class="contact-item"><span class="c-dot"></span><a
+                href="mailto:ankitatadse98@gmail.com">ankitatadse98@gmail.com</a></div>
+            <div class="contact-item"><span class="c-dot"></span><a href="tel:+919881395389">+91 98813 95389</a></div>
+            <div class="contact-item"><span class="c-dot"></span>Nagpur, India · Open to work in India</div>
+          </div>
+          <div class="social-row">
+            <!-- ── EDIT your social links ── -->
+            <a href="https://dribbble.com/ankitatadse" target="_blank" class="social-btn">Dribbble</a>
+            <a href="https://www.linkedin.com/in/ankitatadse" target="_blank" class="social-btn">LinkedIn</a>
+            <a href="https://twitter.com/ankitatadse" target="_blank" class="social-btn">Twitter</a>
+          </div>
+        </div>
+        <div>
+          <form class="contact-form" onsubmit="handleSubmit(event)" method="POST" netlify>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Your name</label>
+                <input type="text" name="Full_Name" required>
+              </div>
+              <div class="form-group">
+                <label>Your email</label>
+                <input type="email" name="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <select name="topic">
+                <option value="">Select a topic</option>
+                <option>Full-time opportunity</option>
+                <option>Freelance project</option>
+                <option>Collaboration</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea placeholder="Tell me about your project or opportunity…" name="message"></textarea>
+            </div>
+            <button type="submit" class="form-submit">Send message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     FOOTER
+     ============================================================ -->
+  <div style="border-top: 1px solid var(--border);">
+    <footer>
+      <p>© 2026 Ankita Tadse · UI/UX Designer</p>
+      <a href="#" class="footer-back">Back to top ↑</a>
+    </footer>
+  </div>
+
+  <!-- Edit panel removed for public deployment -->
+  <div class="edit-panel" id="editPanel" style="display:none!important;pointer-events:none;visibility:hidden;">
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal" id="modal">
+      <!-- Close button -->
+      <div class="modal-close" onclick="closeModal()">✕</div>
+
+      <!-- Image Carousel -->
+      <div class="modal-carousel" id="modalCarousel">
+        <div class="modal-carousel-viewport" id="carouselViewport">
+          <div class="modal-carousel-track" id="carouselTrack"></div>
+          <div class="zoom-controls">
+            <button onclick="zoomIn()">+</button>
+            <button onclick="zoomOut()">−</button>
+            <button onclick="resetZoom()">⤾</button>
+          </div>
+          <button class="carousel-btn prev hidden" id="carouselPrev" onclick="carouselMove(-1)">&#8249;</button>
+          <button class="carousel-btn next hidden" id="carouselNext" onclick="carouselMove(1)">&#8250;</button>
+          <div class="carousel-counter" id="carouselCounter"></div>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+        <div class="carousel-thumbs" id="carouselThumbs"></div>
+      </div>
+
+      <!-- Body -->
+      <div class="modal-body">
+        <div class="modal-header">
+          <div class="modal-tags" id="modalTags"></div>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <p class="modal-subtitle" id="modalSubtitle"></p>
+        </div>
+        <div class="modal-meta" id="modalMeta"></div>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+  <script src='./script.js' defer></script>
+</body>
+
+</html>
